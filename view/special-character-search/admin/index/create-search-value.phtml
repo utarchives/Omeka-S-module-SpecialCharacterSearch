@@ -1,0 +1,16 @@
+<?php
+$form->prepare();
+
+$escapeHtml = $this->plugin('escapeHtml');
+?>
+
+<?php echo $this->pageTitle($this->translate(' Create Search Value'), 1, $this->translate('Special Character Search')); ?>
+
+<?php echo $this->form()->openTag($form); ?>
+<fieldset id='page-actions'>
+    <button type="submit"><?php echo $this->translate('Submit'); ?></button>
+</fieldset>
+Create Search Value
+<?php echo $this->formCollection($form, false); ?>
+
+<?php echo $this->form()->closeTag($form); ?>

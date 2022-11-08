@@ -1,0 +1,22 @@
+<?php
+$form->prepare();
+
+$escapeHtml = $this->plugin('escapeHtml');
+?>
+
+<?php echo $this->pageTitle($this->translate(' Character Map List'), 1, $this->translate('Special Character Search')); ?>
+
+<table style="border: solid 1px; width: 60%;">
+    <tr>
+        <th style="border-right: solid 1px; width:70px;text-align:right;">ID</th>
+        <th style="border-right: solid 1px";>original character</th>
+        <th>search character</th>
+    </tr>
+<?php foreach ($maps as $map): ?>
+    <tr>
+        <td style="border-right: solid 1px; border-top: solid 1px; width:470px;text-align:right;"><?php echo $map->id(); ?></td>
+        <td style="border-right: solid 1px; border-top: solid 1px;"><?php echo $map->originalCharacter(); ?></td>
+        <td style="border-top: solid 1px;"><?php echo $map->searchCharacter(); ?></td>
+    </tr>
+<?php endforeach;?>
+</table>
