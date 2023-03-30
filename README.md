@@ -2,7 +2,7 @@
 
 it is able to display special charcter by searching normal character. 
 
-<!-- Require to install CSVImport module -->
+旧字・異体字対応用モジュール
 
 ## Installation
 
